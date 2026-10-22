@@ -1,3 +1,7 @@
+resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
+  comment = "Origin Access Identity for static website"
+}
+
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = aws_s3_bucket.website_bucket.bucket_regional_domain_name

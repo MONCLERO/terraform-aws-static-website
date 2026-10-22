@@ -26,10 +26,6 @@ resource "aws_s3_object" "jpeg_file" {
   content_type = "image/jpeg"
 }
 
-resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
-  comment = "Origin Access Identity for static website"
-}
-
 resource "aws_s3_bucket_public_access_block" "block" {
   bucket                  = aws_s3_bucket.website_bucket.id
   block_public_acls       = true
