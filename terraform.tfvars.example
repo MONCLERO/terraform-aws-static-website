@@ -1,0 +1,5 @@
+# Copy this file to terraform.tfvars and fix preferred values.
+# terraform.tfvars is git-ignored, so real values stay local.
+
+aws_region = "us-east-1"
+bucket_name = "mybucket-0907354"

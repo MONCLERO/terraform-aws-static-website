@@ -1,0 +1,11 @@
+# Local working files - Provider plugins
+.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Variable files with real values
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
