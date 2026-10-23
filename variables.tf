@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "bucket_name" {
   type        = string
   description = "The name of s3 bucket."
-  default     = "mybucket-09073249330"
+  default     = "mybucket-0907"
 }
 
 variable "index_doc" {
